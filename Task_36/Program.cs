@@ -5,8 +5,8 @@
 // [-4, -6, 89, 6] -> 0
 
 int[] array = new int[new Random().Next(5, 16)];
-var newRnd = new Random();
 int sum = 0;
+var newRnd = new Random();
 Console.Write("[");
 
 for (int i = 0; i < array.Length; i++)
