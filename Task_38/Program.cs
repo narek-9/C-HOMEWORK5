@@ -5,8 +5,6 @@
 
 var array = new double[new Random().Next(4, 9)];
 var newRnd = new Random();
-double max = array[0];
-double min = array[0];
 
 Console.Write("[");
 
@@ -15,6 +13,9 @@ for (int i = 0; i < array.Length; i++)
     array[i] = newRnd.Next(0, 100);
     Console.Write(array[i] + ", ");
 }
+
+double max = array[0];
+double min = array[0]; 
 
 for (int i = 0; i < array.Length; i++)
 {
@@ -28,5 +29,6 @@ for (int i = 0; i < array.Length; i++)
 double result = max - min;
 
 Console.WriteLine("]");
+Console.WriteLine($"Максимальное число = {max}");
+Console.WriteLine($"Минимальное число = {min}");
 Console.WriteLine(result);
-
